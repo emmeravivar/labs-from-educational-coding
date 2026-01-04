@@ -1,0 +1,11 @@
+.add-car {
+    margin: 2rem 0;
+}
+
+.add-car > form > div{
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+}
