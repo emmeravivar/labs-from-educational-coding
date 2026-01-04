@@ -1,0 +1,19 @@
+//Configuración del servidor
+import express from "express"
+import dotenv from "dotenv"
+import { connectBD } from "./config/connectDb.js"
+
+const app = express()
+
+const port = process.env.PORT || 4000
+
+//Configurando dorenv
+dotenv.config(); // busca un archivo .env
+
+//Conectando nuestra BBDD
+connectBD()
+
+
+app.listen(port, () => {
+    console.log('servidor corriendo en el puerto 4000')
+})
